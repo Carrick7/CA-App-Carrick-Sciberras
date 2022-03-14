@@ -11,6 +11,6 @@ npm install
 echo $privatekey > privatekey.pem
 echo $server > server.crt
 # pm2 save error
-sudo pm2 save
+sudo pm2 save --force
 # Start the applciation with the process name ExampleApplication using pm2
 pm2 start ./bin/www --name CA-App-Carrick-Sciberras
