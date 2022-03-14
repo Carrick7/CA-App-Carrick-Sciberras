@@ -8,6 +8,8 @@ pm2 stop CA-App-Carrick-Sciberras
 cd CA-App-Carrick-Sciberras/
 # Install application dependencies
 npm install
+echo $privatekey > privatekey.pem
+echo $server > server.crt
 # pm2 save error
 sudo pm2 save
 # Start the applciation with the process name ExampleApplication using pm2
