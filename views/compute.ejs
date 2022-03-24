@@ -1,0 +1,30 @@
+<<<<<<< HEAD
+=======
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <a href="/math/add">add</a>
+    <a href="/math/divide">divide</a>
+    <a href="/math/multiply">multiply</a>
+    <a href="/math/subtract">subtract</a>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %>. This calculator is 100% free!!!</p>
+    <form action="<%= title %>" method="get">
+      <input type="number" name="num1" /> <%= symbol %> 
+      <input type="number" name="num2" />
+      <br>
+      <button type="submit">submit</button>
+    </form>
+    <%if (result || (typeof result === 'number' && !isNaN(result))) { %>
+      <%= num1 %> <%= symbol %> <%= num2 %> = <%= result %>
+    <% } %>
+
+
+  </body>
+</html>
+>>>>>>> 5513e12e27c18c2d7af3de70a9e2c2a5e6a0cc6b
